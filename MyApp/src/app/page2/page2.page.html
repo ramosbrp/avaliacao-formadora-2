@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Página 2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Botões de Navegação para Home e Página 1 -->
+  <ion-button  routerLink="/home">Ir para Home</ion-button>
+  <ion-button  routerLink="/page1">Ir para Página 1</ion-button>
+
+  <!-- Lista de Comentários -->
+  <ion-list>
+    <ion-item *ngFor="let comment of comments">
+      <ion-label>
+        <h2>{{ comment.name }}</h2>
+        <p>{{ comment.body }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
